@@ -1,0 +1,110 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.demoInput {
+  border-radius: 40px;
+  border: 2px solid #606060;
+  background-color: #303030;
+  font-size: 20px;
+  padding: 16px 24px;
+  min-width: 880px;
+  box-sizing: border-box;
+  letter-spacing: .75px;
+  font-weight: 100;
+  color: #fff;
+  outline: none;
+  box-shadow: 0px 0px 0px #8460f63d;
+  transition: background .2s ease-in-out, border .2s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.demoInput:focus {
+  color: #fff;
+  border: 2px solid #f66060;
+  background: #3b2525;
+  box-shadow: 0px 0px 28px #f660603d;
+}
+
+.tagline > span {
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+  transition: all .2s ease-in-out;
+}
+
+.demoInput:focus ~ .tagline > span {
+  border-bottom: 1px solid #f66060;
+  color: #f66060;
+}
+
+.logo {
+  height: 24px;
+  margin-bottom: 4px;
+}
+
+.speed {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 100;
+  background: #505050;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #808080;
+  font-style: italic;
+  margin-bottom: 32px;
+  margin-top: -4px;
+}
+
+.outputContainer {
+  /* width: 100%;
+  background: #191919;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: -32px; */
+  width: 100%;
+  background: #191919;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 35px;
+  margin-top: -25px;
+  font-size: 0px;
+  transform: translateY(-34px) scale(1);
+  border-radius: 40px;
+  z-index: -1;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+
+.activeOutput {
+  transform: translateY(0px) scale(1);
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+.output {
+  white-space: pre;
+  text-align: left;
+  font-family: monospace;
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
